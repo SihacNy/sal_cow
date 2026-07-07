@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Kantumruy+Pro:wght@400;500;600;700&family=Moul&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-farm-primary: #2E7D32;
+  --color-farm-secondary: #81C784;
+  --color-farm-accent: #A5D6A7;
+}
+
+:root {
+  --bg-app: #fbfbfa;
+  --bg-card: #ffffff;
+  --text-primary: #1c1d1a;
+  --text-secondary: #5a5d55;
+  --border-ui: #e9eae7;
+  
+  --primary-brand: #2e7d32;
+  --primary-brand-hover: #1b5e20;
+  --secondary-brand: #81c784;
+  --accent-light: #f1f8f3;
+  
+  --status-stable-bg: #e8f5e9;
+  --status-stable-text: #2e7d32;
+  --status-unstable-bg: #fff3e0;
+  --status-unstable-text: #ef6c00;
+}
+
+body {
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  /* Fallback to Kantumruy Pro for Khmer characters */
+  font-family: 'Inter', 'Kantumruy Pro', -apple-system, sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+h1, h2, h3, .khmer-moul {
+  font-family: 'Moul', 'Kantumruy Pro', sans-serif;
+}
+
+.human-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-ui);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-nav-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.sidebar-nav-item.active {
+  background-color: var(--primary-brand);
+  color: white;
+}
+
+.sidebar-nav-item:hover:not(.active) {
+  background-color: var(--accent-light);
+  color: var(--text-primary);
+}
+
+.farm-input {
+  background-color: var(--bg-card);
+  border: 1.5px solid var(--border-ui);
+  color: var(--text-primary);
+  padding: 0.625rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  transition: all 0.15s ease;
+  width: 100%;
+}

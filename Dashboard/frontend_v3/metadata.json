@@ -1,0 +1,6 @@
+{
+  "name": "Smart Livestock Weight Monitoring System",
+  "description": "A complete multi-language dashboard system for cattle farms, tracking dynamic weight measurements, biological growth ratios, health alerts, and real-time load-cell telemetry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
